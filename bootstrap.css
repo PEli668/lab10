@@ -1,0 +1,126 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    --primary-color: #3B3355;
+    --secondary-color: #5D5D81;
+    --highlight-color: #BFCDE0;
+    --text-color: #FEFCFD;
+    --background-color: var(--secondary-color);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Navbar*/ 
+.navbar {
+    background-color: var(--primary-color) !important;
+    transition: color 0.3s ease, var(--background-color) 0.3s ease;
+    border-bottom: 2px solid var(--highlight-color); 
+    position: sticky;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--highlight-color) !important;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
+}
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+/* Hero Section */
+section.bg-light {
+    background-color: var(--secondary-color); 
+    color: black;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Services Section */
+
+#services {
+    background-color: var(--secondary-color);
+}
+#services h2,
+#services h3 {
+    color: var(--highlight-color);
+}
+
+#services i {
+    color: var(--highlight-color);
+}
+
+#services p {
+    color: var(--text-color);
+}
+
+/* Portfolio Section */
+#portfolio .card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .card:hover{
+    transform: scale(1.05);
+    box-shadow: black;
+}
+#portfolio .card-title {
+    color: var(--highlight-color);
+}
+
+/* Contact Form */
+
+#contact {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+#contact label {
+    color: var(--highlight-color);
+}
+
+#contact .form-control {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--highlight-color);
+}
+
+#contact .btn-primary {
+    background-color: var(--highlight-color);
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+footer a {
+    color: var(--highlight-color);
+}
+
+footer a:hover {
+    color: var(--text-color);
+}
+
+/* Utility classes for custom padding and margin */
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 3rem !important;
+}
